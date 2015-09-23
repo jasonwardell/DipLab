@@ -1,5 +1,9 @@
-package dip.lab1;
+package dip.lab1.student.solution1;
 
+import dip.lab1.student.solution1.SalariedEmployee;
+import dip.lab1.student.solution1.HourlyEmployee;
+import dip.lab1.student.solution1.HRService;
+import dip.lab1.student.solution1.Employee;
 import java.text.NumberFormat;
 
 /**

@@ -1,4 +1,6 @@
-package dip.lab1;
+package dip.lab1.student.solution1;
+
+import dip.lab1.student.solution1.Employee;
 
 /**
  * A simple implementation sub-class of Employee. These are low-level classes in

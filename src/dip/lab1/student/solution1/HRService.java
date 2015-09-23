@@ -1,4 +1,6 @@
-package dip.lab1;
+package dip.lab1.student.solution1;
+
+import dip.lab1.student.solution1.Employee;
 
 /**
  * A high-level class that delegates to employee objects to do the work. Does
