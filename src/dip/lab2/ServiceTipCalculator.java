@@ -11,4 +11,8 @@ package dip.lab2;
  */
 public class ServiceTipCalculator {
     
+    public double getTip(TipCalculator tc) {
+        return tc.getServiceTip();
+    }
+    
 }

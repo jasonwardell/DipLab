@@ -33,6 +33,11 @@ public class Startup {
         ServiceTipCalculator servTipCalculator = new ServiceTipCalculator();
         
         
+          System.out.println("I tipped the baggage service: " +
+            nf.format(servTipCalculator.getTip(bagTipCalc)));
+        System.out.println("I tipped the food service: " +
+            nf.format(servTipCalculator.getTip(foodServTipCalc)));
+        
         
     }
 

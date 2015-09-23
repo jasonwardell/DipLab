@@ -17,18 +17,10 @@ public class FoodServiceTipCalculator implements TipCalculator{
     private final double poorRate = 0.10;
 
     private double bill;
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
-    private ServiceQuality serviceQuality;
 
-    public FoodServiceTipCalculator(ServiceQuality q, double billAmt) {
-        this.setServiceRating(q);
-        this.setBill(billAmt);
-    }
-
-    public double getTip() {
-        double tip = 0.00; // always initialize local variables
+    @Override
+    public double getServiceTip() {
+             double tip = 0.00; // always initialize local variables
 
         switch(serviceQuality) {
             case GOOD:
@@ -44,6 +36,33 @@ public class FoodServiceTipCalculator implements TipCalculator{
 
         return tip;
     }
+    public enum ServiceQuality {
+        GOOD, FAIR, POOR
+    }
+    private ServiceQuality serviceQuality;
+
+    public FoodServiceTipCalculator(ServiceQuality q, double billAmt) {
+        this.setServiceRating(q);
+        this.setBill(billAmt);
+    }
+
+//    public double getTip() {
+////        double tip = 0.00; // always initialize local variables
+////
+////        switch(serviceQuality) {
+////            case GOOD:
+////                tip = bill * goodRate;
+////                break;
+////            case FAIR:
+////                tip = bill * fairRate;
+////                break;
+////            case POOR:
+////                tip = bill * poorRate;
+////                break;
+////        }
+////
+////        return tip;
+//    }
 
     public final void setBill(double billAmt) {
         if(billAmt < MIN_BILL) {
