@@ -7,21 +7,8 @@ package dip.lab1;
  *
  * @author your name goes here
  */
-public abstract class Employee {
-    // You gotta question if these are appropriate for ALL employees?
-    private double hourlyRate;
-    private double totalHrsForYear;
-    private double annualSalary;
-    private double annualBonus;
+public interface Employee {
 
-    /**
-     * Returns annual wages for hourly workers. Is this polymorphic?
-     * Could it be? Does it belong here?
-     *
-     * @return annual wages for hourly workers using the formula
-     * annualWages = hourlyRate * totalHrsForYear
-     */
-    public double getAnnualWages() {
-        return hourlyRate * totalHrsForYear;
-    }
+    public abstract double getAnnualWage();
+ 
 }
