@@ -1,4 +1,4 @@
-package dip.lab2;
+package dip.lab2.student.solution1;
 
 /**
  * An example low-level class. Does this class definition follow the DIP?
@@ -47,19 +47,19 @@ public class FoodServiceTipCalculator implements TipCalculator{
     }
 
 
-    public final void setBill(double billAmt) {
+    private void setBill(double billAmt) {
         if(billAmt < MIN_BILL) {
             throw new IllegalArgumentException(BILL_ENTRY_ERR);
         }
         bill = billAmt;
     }
 
-    public final void setServiceRating(ServiceQuality q) {
+    private void setServiceRating(ServiceQuality q) {
         // No need to validate because enums provide type safety!
         serviceQuality = q;
     }
 
-    public ServiceQuality getServiceQuality() {
+    private ServiceQuality getServiceQuality() {
         return serviceQuality;
     }
 

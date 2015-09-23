@@ -1,6 +1,9 @@
-package dip.lab2;
+package dip.lab2.student.solution1;
 
 // A useful import if you need it.
+import dip.lab2.student.solution1.ServiceTipCalculator;
+import dip.lab2.student.solution1.FoodServiceTipCalculator;
+import dip.lab2.student.solution1.BaggageServiceTipCalculator;
 import java.text.NumberFormat;
 // Another useful import if you need it.
 import javax.swing.JOptionPane;
@@ -19,9 +22,6 @@ import javax.swing.JOptionPane;
  * @author your name goes here
  */
 public class Startup {
-    public static enum ServiceQuality {
-           GOOD, FAIR, POOR
-    };
  
     public static void main(String[] args) {
         
