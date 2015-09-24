@@ -9,8 +9,12 @@ public class KeyboardCopier implements MsgOutput{
 
     
     @Override
-    public void deliverMessage(String text) {
-     
+    public String deliverMessage(String text) {
+     System.out.println("Your message is ");
+            return text;
     }
+
+    
+    
     
 }
