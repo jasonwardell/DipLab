@@ -1,20 +1,18 @@
 
 package dip.lab3.student.solution1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jWardell
  */
 public class UserMsgCopier implements MsgOutput{
-
-//    @Override
-//    public void deliverMessage(String text) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-
+    
     @Override
     public String deliverMessage(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      JOptionPane.showMessageDialog(null, text);
+      return text;
     }
 
 

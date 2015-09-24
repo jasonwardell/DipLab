@@ -14,10 +14,10 @@ public class MsgManager {
         this.msgInput = msgInput;
         this.msgOutput = msgOutput;
     }
-   
     
     public String copier() {
             String keyboard = msgInput.getMessage();
             return msgOutput.deliverMessage( keyboard );
 	}
+    
 }
